@@ -1,24 +1,27 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Oerjan Website</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-    </head>
-    <body>
-        <H3>Wecome to this Website</H3>
-        <p>This is just a temporary holding website while new is being deveolped.<br>Also just doing some test for work flow.</p>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        
-        <script src="" async defer></script>
-    </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Oerjan Hoel</title>
+  <!-- External CSS File -->
+  <link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+
+  <!-- Navigation Menu -->
+  <nav>
+    <button data-page="pages/home.html" class="active">Home</button>
+    <button data-page="pages/about.html">About</button>
+    <button data-page="pages/blog.html">Blog</button>
+    <button data-page="pages/resume.html">Resume</button>
+  </nav>
+
+  <!-- Container where content swaps out -->
+  <div id="content"></div>
+
+  <!-- JavaScript Libraries -->
+  <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/lib/marked.umd.js"></script>
+  <script src="script/app.js"></script>
+</body>
 </html>
