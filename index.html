@@ -1,10 +1,175 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="light">
+
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Oerjan Hoel, Network and Systems Administrator and Web Developer.">
   <title>Oerjan Hoel</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-<p>Welcome to my personal website! Here you can find information about my projects, interests, and contact details. Feel free to explore and reach out if you have any questions or collaboration ideas.</p>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top border-bottom" aria-label="Main navigation">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="#home">
+        <span class="logo-mark" aria-hidden="true">OH</span>
+        <span>Oerjan Hoel</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <!-- <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item ms-lg-2"> -->
+            <button id="themeToggle" class="btn btn-outline-primary" type="button" aria-label="Switch color theme">
+              <i class="bi bi-moon-stars-fill" aria-hidden="true"></i><span class="theme-label ms-1">Dark</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header id="home" class="hero d-flex align-items-center">
+    <div class="container position-relative">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-8">
+          <p class="eyebrow mb-2">NETWORK AND SYSTEMS ADMINISTRATOR + DEVELOPER</p>
+          <h1 class="display-3 fw-bold">Reliable systems.<br>Meaninghtful web experiences.</h1>
+          <p class="lead col-lg-9">I build secure infrastructure, automate repetitive work, and create accessible,
+            responsive websites.</p>
+          <div class="d-flex flex-wrap gap-2 mt-4">
+           <!-- <a class="btn btn-primary btn-lg" href="#projects">View projects</a>
+            <a class="btn btn-outline-light btn-lg" href="assets/oerjan-hoel-resume.txt" download>Download résumé</a> -->
+            <a class="btn btn-outline-light btn-lg" href="https://github.com/OerjanHoel" target="_blank"
+              rel="noopener noreferrer"><i class="bi bi-github me-1"></i>GitHub</a>
+            <a class="btn btn-outline-light btn-lg" href="https://www.linkedin.com/in/oerjan-hoel" target="_blank"
+              rel="noopener noreferrer"><i class="bi bi-linkedin me-1"></i>LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="stats-section py-5" aria-label="Professional statistics">
+      <div class="container">
+        <div class="row g-4 text-center">
+          <div class="col-md-4">
+            <div class="stat-card h-100"><span class="stat-number" data-target="5" data-suffix="+">0</span><span
+                class="stat-label">Years of experience</span></div>
+          </div>
+          <div class="col-md-4">
+            <div class="stat-card h-100"><span class="stat-number" data-target="1" data-suffix="+">0</span><span
+                class="stat-label">Projects completed</span></div>
+          </div>
+          <div class="col-md-4">
+            <div class="stat-card h-100"><span class="stat-number" data-target="4" data-suffix="">0</span><span
+                class="stat-label">Certifications</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section-padding">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-5">
+            <p class="section-kicker">ABOUT</p>
+            <h2 class="display-6 fw-bold">Technology that serves people and the business.</h2>
+          </div>
+          <div class="col-lg-7">
+            <p class="lead">I am a Network and Systems Administrator and Web Developer focused on Microsoft 365, Azure,
+              automation, infrastructure, and modern front-end development.</p>
+            <p class="text-body-secondary">My goal is to understand the technology we use and make choices that reduce complexity, improve reliability, and create digital
+              experiences that are easy to use and maintain.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section-padding bg-body-tertiary">
+      <div class="container">
+        <p class="section-kicker">CORE CAPABILITIES</p>
+        <h2 class="mb-4">Skills & platforms</h2>
+        <div class="skills-list">
+          <span class="skill-badge"><i class="bi bi-microsoft"></i>Microsoft 365</span><span class="skill-badge"><i
+              class="bi bi-cloud"></i>Azure</span>
+          <span class="skill-badge"><i class="bi bi-terminal"></i>PowerShell</span><span class="skill-badge"><i
+              class="bi bi-hdd-rack"></i>VMware</span>
+          <span class="skill-badge"><i class="bi bi-box"></i>Docker</span><span class="skill-badge"><i
+              class="bi bi-ubuntu"></i>Linux</span>
+          <span class="skill-badge"><i class="bi bi-diagram-3"></i>Networking</span><span class="skill-badge"><i
+              class="bi bi-code-slash"></i>Web Development</span>
+        </div>
+      </div>
+    </section>
+    <!--
+        <section id="projects" class="section-padding">
+          <div class="container">
+            <div class="d-flex justify-content-between align-items-end mb-4"><div><p class="section-kicker">SELECTED WORK</p><h2 class="mb-0">Featured projects</h2></div></div>
+            <div class="row g-4">
+              <div class="col-md-6 col-lg-4"><article class="card project-card h-100"><div class="project-thumb thumb-blue"><i class="bi bi-speedometer2"></i></div><div class="card-body d-flex flex-column"><h3 class="h5">Infrastructure Dashboard</h3><p class="text-body-secondary">A consolidated view of server, network, and cloud service health.</p><div class="mt-auto"><span class="badge text-bg-secondary">Monitoring</span> <span class="badge text-bg-secondary">JavaScript</span><br><a class="btn btn-link px-0 mt-2" href="projects/infrastructure-dashboard.html">View case study <i class="bi bi-arrow-right"></i></a></div></div></article></div>
+              <div class="col-md-6 col-lg-4"><article class="card project-card h-100"><div class="project-thumb thumb-purple"><i class="bi bi-cloud-check"></i></div><div class="card-body d-flex flex-column"><h3 class="h5">Azure Automation</h3><p class="text-body-secondary">Repeatable cloud administration workflows built with PowerShell.</p><div class="mt-auto"><span class="badge text-bg-secondary">Azure</span> <span class="badge text-bg-secondary">PowerShell</span><br><a class="btn btn-link px-0 mt-2" href="projects/azure-automation.html">View case study <i class="bi bi-arrow-right"></i></a></div></div></article></div>
+              <div class="col-md-6 col-lg-4"><article class="card project-card h-100"><div class="project-thumb thumb-green"><i class="bi bi-window"></i></div><div class="card-body d-flex flex-column"><h3 class="h5">Responsive Business Website</h3><p class="text-body-secondary">An accessible Bootstrap website optimized for desktop and mobile.</p><div class="mt-auto"><span class="badge text-bg-secondary">Bootstrap</span> <span class="badge text-bg-secondary">Accessibility</span><br><a class="btn btn-link px-0 mt-2" href="projects/business-website.html">View case study <i class="bi bi-arrow-right"></i></a></div></div></article></div>
+            </div>
+          </div>
+        </section>
+    
+        <section id="blog" class="section-padding bg-body-tertiary">
+          <div class="container"><p class="section-kicker">NOTES & GUIDES</p><h2 class="mb-4">Latest articles</h2>
+            <div class="row g-4">
+              <div class="col-md-4"><article class="card h-100"><div class="card-body"><small class="text-body-secondary">Security · 6 min read</small><h3 class="h5 mt-2">Practical Microsoft 365 Security</h3><p>Foundational controls for protecting identities, data, and administrative access.</p><a href="blog/microsoft-365-security.html" class="stretched-link">Read article</a></div></article></div>
+              <div class="col-md-4"><article class="card h-100"><div class="card-body"><small class="text-body-secondary">Automation · 5 min read</small><h3 class="h5 mt-2">PowerShell Automation Patterns</h3><p>Simple patterns for safer, reusable, and easier-to-maintain scripts.</p><a href="blog/powershell-automation.html" class="stretched-link">Read article</a></div></article></div>
+              <div class="col-md-4"><article class="card h-100"><div class="card-body"><small class="text-body-secondary">Web · 4 min read</small><h3 class="h5 mt-2">Building Better Bootstrap Sites</h3><p>Small improvements that make Bootstrap projects feel intentional and polished.</p><a href="blog/better-bootstrap-sites.html" class="stretched-link">Read article</a></div></article></div>
+            </div>
+          </div>
+        </section>
+  
+    <section id="contact" class="section-padding">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-5">
+            <p class="section-kicker">CONTACT</p>
+            <h2>Let’s build something useful.</h2>
+            <p class="text-body-secondary">This demo form validates in the browser. Connect it to your preferred form
+              service or back end before publishing.</p>
+          </div>
+          <div class="col-lg-7">
+            <form id="contactForm" class="card card-body p-4" novalidate>
+              <div class="row g-3">
+                <div class="col-md-6"><label for="name" class="form-label">Name</label><input id="name"
+                    class="form-control" type="text" required></div>
+                <div class="col-md-6"><label for="email" class="form-label">Email</label><input id="email"
+                    class="form-control" type="email" required></div>
+                <div class="col-12"><label for="message" class="form-label">Message</label><textarea id="message"
+                    class="form-control" rows="5" required></textarea></div>
+                <div class="col-12"><button class="btn btn-primary" type="submit">Send message</button>
+                  <p id="formStatus" class="mt-3 mb-0" role="status"></p>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+-->
+  <footer class="border-top py-4">
+    <div class="container d-flex flex-column flex-md-row justify-content-between gap-2"><span>© <span
+          id="currentYear"></span> Oerjan Hoel</span><span>Network and Systems Administrator & Web Developer</span></div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,25 @@
+:root { --brand: #2878ff; --hero-a: #06162e; --hero-b: #143b72; }
+html { scroll-behavior: smooth; }
+body { font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; }
+section { scroll-margin-top: 76px; }
+.navbar { backdrop-filter: blur(12px); }
+.logo-mark { display:grid; place-items:center; width:2.35rem; height:2.35rem; border-radius:.7rem; background:var(--brand); color:#fff; font-size:.85rem; letter-spacing:.04em; }
+.hero { min-height: 76vh; color:#fff; background: radial-gradient(circle at 80% 20%, rgba(40,120,255,.42), transparent 34%), linear-gradient(135deg,var(--hero-a),var(--hero-b)); overflow:hidden; }
+.hero .lead { color: rgba(255,255,255,.8); }
+.eyebrow, .section-kicker { color: #64a1ff; font-size:.76rem; font-weight:800; letter-spacing:.16em; }
+.section-padding { padding: 6rem 0; }
+.stats-section { margin-top:-2.6rem; position:relative; z-index:2; }
+.stat-card { padding:2rem 1rem; border:1px solid var(--bs-border-color); border-radius:1rem; background:var(--bs-body-bg); box-shadow:0 1rem 2.5rem rgba(0,0,0,.08); }
+.stat-number { display:block; color:var(--brand); font-size:2.5rem; font-weight:800; }
+.stat-label { color:var(--bs-secondary-color); }
+.skills-list { display:flex; flex-wrap:wrap; gap:.8rem; }
+.skill-badge { display:inline-flex; align-items:center; gap:.55rem; padding:.75rem 1rem; border:1px solid var(--bs-border-color); border-radius:999px; background:var(--bs-body-bg); font-weight:600; }
+.project-card { border:1px solid var(--bs-border-color); overflow:hidden; transition:transform .25s ease, box-shadow .25s ease; }
+.project-card:hover { transform:translateY(-6px); box-shadow:0 1rem 2.5rem rgba(0,0,0,.12); }
+.project-thumb { height:190px; display:grid; place-items:center; color:#fff; font-size:4rem; }
+.thumb-blue { background:linear-gradient(135deg,#0b51ad,#2f8cff); }.thumb-purple { background:linear-gradient(135deg,#4d2a93,#9b71ff); }.thumb-green { background:linear-gradient(135deg,#087f5b,#35c994); }
+.card { border-color:var(--bs-border-color); }
+.article-width { max-width: 800px; }
+.article-width p, .article-width li { font-size:1.08rem; line-height:1.8; }
+@media (max-width: 767px) { .hero { min-height:68vh; } .section-padding { padding:4rem 0; } .stats-section { margin-top:0; } }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior:auto; } *, *::before, *::after { transition:none !important; animation:none !important; } }

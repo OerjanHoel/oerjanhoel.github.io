@@ -1,0 +1,21 @@
+OERJAN HOEL
+IT Systems Administrator and Web Developer
+Petaluma, California
+
+PROFILE
+Replace this placeholder with your professional summary.
+
+CORE SKILLS
+Microsoft 365 | Azure | PowerShell | VMware | Docker | Linux | Networking | Web Development
+
+EXPERIENCE
+Add your roles, accomplishments, employers, and dates here.
+
+CERTIFICATIONS
+Add your certifications here.
+
+EDUCATION
+Add your education here.
+
+CONTACT
+Add your email, LinkedIn URL, GitHub URL, and website.
